@@ -75,7 +75,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-[✨](https://telegra.ph/file/9c6e5b30022565cbe9f4a.jpg) *Hello!!*
+[✨](https://telegra.ph/file/44890f3429c63b416f8fc.jpg) *Hello!!*
 *My name is Nakano Nino*
 
 *I'm a simple bot with Anime theme*
@@ -100,7 +100,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-*Main Commands [✓]().
+*Main Commands [✓](https://telegra.ph/file/99cf2cff67c84e3622001.jpg).
 × /start : To start this bot.
 × /help : To view bot commands.
 
