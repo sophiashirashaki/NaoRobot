@@ -75,9 +75,11 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-[✨](https://telegra.ph/file/9c6e5b30022565cbe9f4a.jpg) ʜᴇʟʟᴏ  ᴍʏ ɴᴀᴍᴇ ɪs ɴᴀᴏ ᴛᴏᴍᴏʀɪ
-ɪ'ᴍ ᴀ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇ ʙᴏᴛ ꜰᴏʀ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀsɪʟʏ!
-ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ [Skyzu​](https://t.me/skyzuex) 
+[✨](https://telegra.ph/file/9c6e5b30022565cbe9f4a.jpg) *Hello!!*
+*My name is Nakano Nino*
+
+*I'm a simple bot with Anime theme*
+Maintained by [Anko Loli​](https://t.me/erosei_1) 
 """
 
 buttons = [
@@ -98,12 +100,12 @@ buttons = [
 
 
 HELP_STRINGS = """
-ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ."""
+*Main Commands [✓]()."""
 
 nao_IMG = "https://telegra.ph/file/9c6e5b30022565cbe9f4a.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @skyzuX \
+ You can support the project by contacting [Anko Loli](t.me/erosei_1) \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -220,8 +222,8 @@ def start(update: Update, context: CallbackContext):
                             [
                                 {
                                     InlineKeyboardButton(
-                                        text="sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ​",
-                                        url="https://t.me/skyzusupport",
+                                        text="Support Chat",
+                                        url="https://t.me/Alvin_Image_Editor_Group",
                                     )
                                 }
                             ]
@@ -359,23 +361,23 @@ def nao_about_callback(update, context):
     query = update.callback_query
     if query.data == "nao_":
         query.message.edit_text(
-            text=""" 💡 I'm *NaoRobot*, a powerful group management bot built to help you manage your group easily.
+            text=""" 💡 I'm *Nakano Nino*, a powerful group management bot built to help you manage your group easily.
                  \n• I can restrict users.
                  \n• I can greet users with customizable welcome messages and even set a group's rules.
                  \n• I have an advanced anti-flood system.
                  \n• I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  \n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n• I check for admins' permissions before executing any command and more stuffs
-                 \n\n_naorobot's licensed under the GNU General Public License v3.0_
-                 \n\nIf you have any question about NaoRobot, let us know at .""",
+                 \n\n_Ninobotz'o's licensed under the GNU General Public License v3.0_
+                 \n\nIf you have any question about Ninobotz, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Source", url="https://github.com/Skyzu/NaoRobot"
+                    InlineKeyboardButton(text="Source", url="https://github.com/404"
                     ),
-                    InlineKeyboardButton(text="Dev", url="https://t.me/skyzuex")
+                    InlineKeyboardButton(text="Dev", url="https://t.me/erosei_1")
                  ],
                  [
                     InlineKeyboardButton(text="🔙 Back", callback_data="nao_back")
@@ -398,8 +400,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi I'm *NaoRobot*
-                 \nHere is the [Source Code](https://github.com/Skyzu/NaoRobot) .""",
+            text=""" Hi I'm *Nakano Nino*
+                 \nHere is the [Source Code](https://github.com/404) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
