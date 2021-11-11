@@ -100,7 +100,11 @@ buttons = [
 
 
 HELP_STRINGS = """
-*Main Commands [✓]()."""
+*Main Commands [✓]().
+× /start : To start this bot.
+× /help : To view bot commands.
+
+If you have a complaint or request, please join the [support group](t.me/Alvin_Image_Editor_Group)"""
 
 nao_IMG = "https://telegra.ph/file/9c6e5b30022565cbe9f4a.jpg"
 
